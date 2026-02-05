@@ -73,13 +73,21 @@
     }
   ],
   "prensa": [
-    { "title": "Nota en Canal 13", "date": "2024", "link": "#" },
-    { "title": "Entrevista Radio Mitre", "date": "2023", "link": "#" }
+    { "title": "Cómo actuar ante una muerte súbita", "category": "Canal 13 - Nota Exclusiva", "date": "05 Feb 2026", "link": "#", "excerpt": "Nuestro equipo médico explica los pasos fundamentales para realizar una reanimación exitosa." },
+    { "title": "DEA en clubes y escuelas", "category": "Radio Mitre - Entrevista", "date": "03 Feb 2026", "link": "#", "excerpt": "Entrevista exclusiva sobre la importancia de desfibriladores en espacios de alta concurrencia." },
+    { "title": "Nueva normativa de salud", "category": "La Nación - Salud", "date": "01 Feb 2026", "link": "#", "excerpt": "Análisis técnico de la Ley 27.159 y las implicancias para empresas e instituciones públicas." }
   ],
   "confian": [
-    { "name": "YPF", "logo": "/logos/ypf.svg" },
-    { "name": "AFA", "logo": "/logos/afa.svg" },
-    { "name": "Aeropuertos Argentina 2000", "logo": "/logos/aa2000.svg" }
+    { "name": "YPF" },
+    { "name": "AFA" },
+    { "name": "Toyota" },
+    { "name": "Galicia" },
+    { "name": "Coca-Cola" },
+    { "name": "Santander" },
+    { "name": "Unilever" },
+    { "name": "Arcor" },
+    { "name": "Pampa Energía" },
+    { "name": "OSDE" },
+    { "name": "Swiss Medical" }
   ]
 }
-

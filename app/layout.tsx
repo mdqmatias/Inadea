@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
+import ScrollReveal from "@/components/UI/ScrollReveal";
 
-const outfit = Outfit({
+const raleway = Raleway({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
-  title: "INADEA | Institución Médica Especialista en Cardioprotección",
-  description:
-    "Especialistas en cardioprotección, RCP y desfibriladores (DEA). Un equipo médico comprometido con la vida.",
+  title: "Inadea | Institución Médica Lider en Cardioprotección",
+  description: "Especialistas en la creación de áreas cardioasistidas, capacitación en RCP y provisión de desfibriladores (DEA).",
 };
 
 export default function RootLayout({
@@ -20,10 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body
-        className={`${outfit.variable} antialiased selection:bg-brand-red selection:text-white`}
-      >
-        {children}
+      <body className={`${raleway.variable} font-sans antialiased selection:bg-brand-teal selection:text-white bg-white`}>
+        {/* Full width container - Background is white everywhere */}
+        <div className="site-wrapper min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
+        <ScrollReveal />
       </body>
     </html>
   );
