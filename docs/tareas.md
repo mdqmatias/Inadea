@@ -1,0 +1,24 @@
+# Tareas: Rediseño Web Inadea
+
+- [ ] Planificación Inicial y Arquitectura [/]
+  - [x] Investigar contenido y la identidad visual de la web actual
+  - [ ] Crear plan de implementación detallado
+  - [ ] Obtener aprobación del usuario
+- [ ] Configuración del Proyecto [ ]
+  - [ ] Inicializar proyecto Next.js
+  - [ ] Configurar Tailwind CSS y estilos globales
+  - [ ] Establecer estructura del proyecto (components, hooks, lib, etc.)
+- [ ] Capa de Contenido y Datos [ ]
+  - [ ] Definir estructuras de contenido para secciones administrables
+  - [ ] Configurar un archivo de datos local para contenido administrable (Banner, Equipo, Productos, etc.)
+- [ ] Rediseño de UI/UX [ ]
+  - [ ] Implementar Hero/Banner con estadísticas de sobrevida
+  - [ ] Implementar sección "¿Qué hacemos?" (Cardioprotección)
+  - [ ] Implementar sección Nosotros (integrando Premios Inadea por la Vida)
+  - [ ] Implementar sección Productos (rediseño del cuadro comparativo)
+  - [ ] Implementar sección Contacto (corrigiendo link de IG, quitando cursos)
+  - [ ] Implementar secciones "Confían en nosotros" y "Prensa"
+- [ ] Verificación y Pulido [ ]
+  - [ ] Revisión de diseño responsivo
+  - [ ] Optimización SEO
+  - [ ] Recorrido final
