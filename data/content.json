@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "¿Sabías que sin un DEA las probabilidades de sobrevida son menores al 5%?",
+    "subtitle": "Cada minuto cuenta. Con un desfibrilador y personal capacitado, la sobrevida puede aumentar hasta un 70%.",
+    "cta": "Cardioprotegé tu espacio"
+  },
+  "cardioproteccion": {
+    "description": "Somos una Institución Médica que considera que la cardioprotección es un acto médico y debe ser realizada por médicos cardiólogos especialistas en electrofisiología y arritmias.",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Evaluación",
+        "description": "Evaluamos el terreno para determinar número, tipo y ubicación de desfibriladores."
+      },
+      {
+        "id": "02",
+        "title": "Asesoramiento",
+        "description": "Te asesoramos sobre la marca y modelo ideal según tu institución."
+      },
+      {
+        "id": "03",
+        "title": "Señalización",
+        "description": "Cartelería reglamentaria y algoritmos de emergencia."
+      },
+      {
+        "id": "04",
+        "title": "Capacitación",
+        "description": "Entrenamiento en RCP y uso del DEA por médicos cardiólogos."
+      },
+      {
+        "id": "05",
+        "title": "Certificación",
+        "description": "Certificado de Área Cardioasistida con validez nacional."
+      }
+    ]
+  },
+  "nosotros": {
+    "description": "El principal objetivo de nuestra Institución es salvar vidas.",
+    "stats": [
+      { "label": "Personas capacitadas", "value": "+20.000" },
+      { "label": "Desfibriladores instalados", "value": "+500" },
+      { "label": "Vidas salvadas", "value": "+50" }
+    ],
+    "premios": [
+      {
+        "title": "Premios Inadea por la Vida",
+        "description": "Reconocimiento a quienes actuaron ante una emergencia cardiológica."
+      }
+    ]
+  },
+  "contacto": {
+    "email": "info@inadea.com.ar",
+    "telefono": "+54 9 11 XXXX-XXXX",
+    "instagram": "inadea.ok",
+    "direccion": "Dirección actual"
+  },
+  "ley": {
+    "numero": "27.159",
+    "texto": "Ley de Muerte Súbita. Sistema de Prevención Integral."
+  },
+  "productos": [
+    {
+      "name": "DEA Automático",
+      "brand": "Inadea Premium",
+      "features": ["Aprobado por FDA", "Parches indiferentes", "Display de texto", "Batería de 5 años"],
+      "impact": "Ideal para espacios públicos y empresas."
+    },
+    {
+      "name": "DEA Semiautomático",
+      "brand": "Inadea Pro",
+      "features": ["Modo sincronizado", "350 joules", "Resistente al agua", "Garantía de 7 años"],
+      "impact": "Máximo control para personal capacitado."
+    }
+  ],
+  "prensa": [
+    { "title": "Nota en Canal 13", "date": "2024", "link": "#" },
+    { "title": "Entrevista Radio Mitre", "date": "2023", "link": "#" }
+  ],
+  "confian": [
+    { "name": "YPF", "logo": "/logos/ypf.svg" },
+    { "name": "AFA", "logo": "/logos/afa.svg" },
+    { "name": "Aeropuertos Argentina 2000", "logo": "/logos/aa2000.svg" }
+  ]
+}
+
