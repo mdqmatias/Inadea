@@ -9,14 +9,14 @@
   
   --font-sans: var(--font-raleway), 'Inter', sans-serif;
 
-  /* Elite Level Fluid Typography - Strict and Controlled */
-  /* We use min() to ensure it never exceeds the desktop max, even on ultra-wide screens */
+  /* Tipografía Fluida de Nivel Élite - Estricta y Controlada */
+  /* Utilizamos min() para asegurar que nunca exceda el máximo de escritorio, incluso en pantallas ultra anchas */
   --text-fluid-h1: clamp(2.25rem, 4vw + 1vh, 4.25rem);
   --text-fluid-h2: clamp(1.75rem, 3vw + 0.5vh, 2.75rem);
   --text-fluid-h3: clamp(1.25rem, 2vw, 1.75rem);
   --text-fluid-body: clamp(0.95rem, 0.5vw + 0.7vh, 1.05rem);
   
-  /* Elite Spacing - Balanced with Viewport Height awareness */
+  /* Espaciado Élite - Balanceado con conciencia de la altura del viewport */
   --spacing-fluid-y: clamp(4rem, 8vh, 8rem);
   --spacing-fluid-x: clamp(1.5rem, 5vw, 4rem);
 }
@@ -28,7 +28,7 @@
   --nav-height: 80px;
 }
 
-/* 1. COMPLETELY UNIFORM BACKGROUND - No Boxed Look */
+/* 1. FONDO COMPLETAMENTE UNIFORME - Sin apariencia de caja */
 body {
   background-color: #ffffff;
   color: var(--foreground);
@@ -40,7 +40,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 2. VIRTUAL MAX-WIDTH - Only for inner alignment */
+/* 2. ANCHO MÁXIMO VIRTUAL - Solo para alineación interna */
 .container-max {
   max-width: var(--max-content);
   margin-left: auto;
@@ -51,7 +51,7 @@ body {
 .site-wrapper {
   width: 100%;
   position: relative;
-  background-color: white; /* Unified background */
+  background-color: white; /* Fondo unificado */
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,9 +65,9 @@ h1 { font-size: var(--text-fluid-h1); }
 h2 { font-size: var(--text-fluid-h2); }
 h3 { font-size: var(--text-fluid-h3); }
 
-/* 3. LAPTOP-FIRST HEADER OVERLAP PROTECTION */
+/* 3. PROTECCIÓN CONTRA SOLAPAMIENTO DEL HEADER EN LAPTOPS */
 .pt-hero {
-  /* Dynamic padding that respects heights of small screens (laptops) */
+  /* Padding dinámico que respeta las alturas de pantallas pequeñas (laptops) */
   padding-top: calc(var(--nav-height) + clamp(2rem, 10vh, 8rem));
 }
 
@@ -85,7 +85,7 @@ h3 { font-size: var(--text-fluid-h3); }
   padding-right: var(--spacing-fluid-x);
 }
 
-/* Luxury visual utils */
+/* Utilidades visuales de lujo */
 .glass-morphism {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
@@ -94,7 +94,7 @@ h3 { font-size: var(--text-fluid-h3); }
   box-shadow: 0 15px 40px -10px rgba(10, 75, 108, 0.1);
 }
 
-/* Animations reset with elite easing */
+/* Animaciones reiniciadas con suavizado de élite */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -104,7 +104,7 @@ h3 { font-size: var(--text-fluid-h3); }
   animation: float 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-/* Scroll Reveal Enhanced */
+/* Scroll Reveal Mejorado */
 .reveal {
   opacity: 0;
   transform: translateY(30px);

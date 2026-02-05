@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full bg-white">
-      {/* Hero Section - Strict Laptop Height Control */}
+      {/* Sección Hero - Control estricto de altura para Laptops */}
       <section className="relative min-h-[90svh] lg:min-h-[95svh] flex flex-col items-center justify-center pt-hero pb-20 overflow-hidden">
-        {/* Subtle decorative glow - No boxed look */}
+        {/* Resplandor decorativo sutil - Sin apariencia de caja */}
         <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-brand-teal/5 blur-[120px] rounded-full -z-10 animate-pulse-soft opacity-60" />
         
         <div className="container-max px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 flex flex-col gap-8 lg:gap-10 text-center lg:text-left z-20 reveal active">
-            {/* Tag Badge - Now safe from header overlap */}
+            {/* Etiqueta - Ahora a salvo del solapamiento del header */}
             <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-brand-blue shadow-xl text-white text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] leading-none self-center lg:self-start">
               <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
               Institución líder en vida
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           
           <div className="lg:col-span-5 relative z-10 hidden lg:block reveal active delay-200">
-            {/* Image Box - Scaled for Laptop Height */}
+            {/* Contenedor de Imagen - Escalado para altura de Laptop */}
             <div className="relative aspect-[4/5] max-h-[50svh] rounded-extreme border-[10px] border-white shadow-2xl overflow-hidden mx-auto">
                <Image 
                   src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1000" 
@@ -64,7 +64,7 @@ export default function Home() {
                />
             </div>
 
-            {/* Badges - Premium but smaller for height safety */}
+            {/* Badges - Premium pero más pequeños para seguridad de altura */}
             <div className="absolute -top-6 -right-6 glass-morphism p-5 rounded-premium shadow-2xl animate-float flex items-center gap-4 z-30 border-white">
                <div className="w-14 h-14 rounded-2xl bg-brand-teal flex items-center justify-center text-white shadow-lg">
                  <span className="font-black text-2xl">70%</span>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof - Contained but seamless background */}
+      {/* Social Proof - Contenido centrado con fondo fluido */}
       <section className="py-20 bg-white overflow-hidden border-y border-brand-gray/50 relative reveal">
         <div className="container-max flex flex-col gap-10">
           <div className="flex flex-col gap-2 items-center text-center px-6">
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Specialty Section */}
+      {/* Sección de Especialidad */}
       <section className="section-padding bg-white overflow-hidden">
         <div className="container-max grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="relative aspect-video rounded-extreme overflow-hidden shadow-2xl border-2 border-brand-gray group reveal">
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Law */}
+      {/* Ley */}
       <section className="bg-brand-red py-20 px-8 relative overflow-hidden reveal">
          <div className="absolute inset-0 bg-black/5" />
          <div className="container-max flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 relative z-10">

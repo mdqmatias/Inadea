@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-brand-dark pt-32 pb-16 px-10 lg:px-20 text-white border-t-2 border-white/5 relative overflow-hidden">
-      {/* Premium Background Element */}
+      {/* Elemento de fondo premium */}
       <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-teal/5 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/4 animate-pulse-soft" />
       
       <div className="w-full relative z-10">
@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Footer Bottom */}
+        {/* Parte inferior del footer */}
         <div className="pt-16 border-t-2 border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
            <div className="text-[11px] font-black text-white/30 uppercase tracking-[0.5em]">© {new Date().getFullYear()} Inadea Institución Médica</div>
            <div className="flex items-center gap-12 text-[11px] font-black text-white/30 uppercase tracking-[0.5em]">

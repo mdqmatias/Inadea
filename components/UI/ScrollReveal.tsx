@@ -8,7 +8,7 @@ export default function ScrollReveal() {
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: "0px 0px -10% 0px" // More forgiving trigger
+      rootMargin: "0px 0px -10% 0px" // Activador más flexible
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -19,11 +19,11 @@ export default function ScrollReveal() {
       });
     }, observerOptions);
 
-    // Function to observe elements
+    // Función para observar elementos
     const observeElements = () => {
       const elements = document.querySelectorAll(".reveal");
       elements.forEach((el) => {
-        // If it's already in viewport or was active, make it active
+        // Si ya está en el viewport o ya estaba activo, marcar como activo
         const rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight) {
           el.classList.add("active");
@@ -32,17 +32,17 @@ export default function ScrollReveal() {
       });
     };
 
-    // Initial check
+    // Verificación inicial
     observeElements();
 
-    // Re-check periodically or after a short delay to account for dynamic content/hydration
+    // Volver a verificar periódicamente o después de un breve retraso para contenido dinámico/hidratación
     const timer = setTimeout(observeElements, 500);
 
     return () => {
       observer.disconnect();
       clearTimeout(timer);
     };
-  }, [pathname]); // Re-run on route change
+  }, [pathname]); // Volver a ejecutar al cambiar de ruta
 
   return null;
 }

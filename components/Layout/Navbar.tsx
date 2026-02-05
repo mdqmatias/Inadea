@@ -63,7 +63,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menú Móvil */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-24 px-4 lg:hidden z-40 animate-in fade-in slide-in-from-top-4 duration-500 pointer-events-auto">
            <div className="glass-morphism rounded-[2.5rem] p-10 shadow-2xl border border-white/20 flex flex-col gap-8 mx-auto max-w-[500px]">

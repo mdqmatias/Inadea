@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <body className={`${raleway.variable} font-sans antialiased selection:bg-brand-teal selection:text-white bg-white`}>
-        {/* Full width container - Background is white everywhere */}
+        {/* Contenedor de ancho completo - El fondo es blanco en todas partes */}
         <div className="site-wrapper min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">

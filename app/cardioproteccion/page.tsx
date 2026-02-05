@@ -17,7 +17,7 @@ export default function Cardioproteccion() {
 
       <section className="section-padding overflow-hidden">
         <div className="w-full flex flex-col gap-24 lg:gap-32">
-          {/* Main Content */}
+          {/* Contenido Principal */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
              <div className="flex flex-col gap-10 order-2 lg:order-1 text-center lg:text-left items-center lg:items-start reveal">
                 <div className="flex flex-col gap-4">
@@ -49,7 +49,7 @@ export default function Cardioproteccion() {
              </div>
           </div>
 
-          {/* Steps */}
+          {/* Pasos */}
           <div className="flex flex-col gap-16 lg:gap-24">
             <div className="text-center reveal">
                <span className="text-brand-teal font-black uppercase tracking-[0.6em] text-[10px] mb-4 block">Nuestra Metodología</span>
@@ -73,7 +73,7 @@ export default function Cardioproteccion() {
         </div>
       </section>
 
-      {/* Quote Section */}
+      {/* Sección de Cita */}
       <section className="py-32 bg-brand-dark overflow-hidden relative group section-padding reveal">
          <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-teal/5 blur-[150px] rounded-full" />
          <div className="max-w-4xl mx-auto flex flex-col items-center gap-12 relative z-10 text-center">
