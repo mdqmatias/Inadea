@@ -19,6 +19,14 @@
   /* Espaciado Élite - Balanceado con conciencia de la altura del viewport */
   --spacing-fluid-y: clamp(4rem, 8vh, 8rem);
   --spacing-fluid-x: clamp(1.5rem, 5vw, 4rem);
+
+  /* Animaciones Especiales */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 }
 
 :root {
