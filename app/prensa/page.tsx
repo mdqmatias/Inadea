@@ -21,11 +21,11 @@ export default function Prensa() {
       />
 
       <section className="section-padding bg-brand-gray/20">
-        <div className="w-full">
-          {/* Main Grid */}
+        <div className="container-max">
+          {/* Main Grid - Synced with Home Style */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
              {prensa.map((post, i) => (
-                <div key={i} className={`group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-xl transition-all duration-500 border border-zinc-100/50 reveal`}>
+                <div key={i} className={`group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-2xl transition-all duration-500 border border-zinc-100/50 reveal`}>
                   <div className="aspect-video bg-brand-gray rounded-[2rem] mb-6 overflow-hidden relative">
                      <Image 
                       src={pressImages[i] || pressImages[0]}
@@ -57,7 +57,7 @@ export default function Prensa() {
 
       {/* Newsletter / Contact Section */}
       <section className="section-padding bg-white">
-         <div className="w-full p-10 lg:p-20 rounded-[3rem] bg-brand-blue relative overflow-hidden flex flex-col items-center text-center gap-8 reveal">
+         <div className="container-max p-10 lg:p-20 rounded-[3rem] bg-brand-blue relative overflow-hidden flex flex-col items-center text-center gap-8 reveal">
             <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" />
             <span className="relative z-10 text-brand-teal font-extrabold uppercase tracking-[0.4em] text-xs">Atención Médica</span>
             <h2 className="relative z-10 text-white text-3xl md:text-5xl font-extrabold tracking-tighter uppercase leading-none max-w-3xl">¿Necesita asesoramiento profesional?</h2>
