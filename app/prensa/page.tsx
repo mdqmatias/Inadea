@@ -22,10 +22,10 @@ export default function Prensa() {
 
       <section className="section-padding bg-brand-gray/20">
         <div className="container-max">
-          {/* Main Grid - Synced with Home Style */}
+          {/* Main Grid - Synced with Home Style for Consistency */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
              {prensa.map((post, i) => (
-                <div key={i} className={`group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-2xl transition-all duration-500 border border-zinc-100/50 reveal`}>
+                <div key={i} className="group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-2xl transition-all duration-500 border border-zinc-100/50 reveal">
                   <div className="aspect-video bg-brand-gray rounded-[2rem] mb-6 overflow-hidden relative">
                      <Image 
                       src={pressImages[i] || pressImages[0]}
@@ -63,7 +63,7 @@ export default function Prensa() {
             <h2 className="relative z-10 text-white text-3xl md:text-5xl font-extrabold tracking-tighter uppercase leading-none max-w-3xl">¿Necesita asesoramiento profesional?</h2>
             <p className="relative z-10 text-white/70 text-lg max-w-xl font-medium">Nuestro cuerpo médico está disponible para coordinar una auditoría técnica en su institución.</p>
             <Link href="/contacto" className="relative z-10 bg-white text-brand-blue px-14 py-6 rounded-full font-extrabold uppercase text-xs tracking-widest hover:scale-110 transition-all shadow-2xl">
-              Contactar Ahora
+              Contacto Ahora
             </Link>
          </div>
       </section>

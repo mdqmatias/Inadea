@@ -52,7 +52,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contacto" className={`btn-premium bg-brand-blue text-white ml-2 transition-all shadow-xl shadow-brand-blue/10 ${scrolled ? 'py-2 px-6' : 'py-3 px-8'}`}>
-            Consultar
+            Contacto
           </Link>
         </div>
 
