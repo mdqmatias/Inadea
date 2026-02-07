@@ -25,7 +25,7 @@ export default function Prensa() {
           {/* Main Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
              {prensa.map((post, i) => (
-                <div key={i} className={`group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-xl transition-all duration-500 border border-zinc-100/50 reveal delay-${i * 100}`}>
+                <div key={i} className={`group flex flex-col min-h-full bg-white rounded-[2.5rem] p-4 shadow-lg hover:shadow-xl transition-all duration-500 border border-zinc-100/50 reveal`}>
                   <div className="aspect-video bg-brand-gray rounded-[2rem] mb-6 overflow-hidden relative">
                      <Image 
                       src={pressImages[i] || pressImages[0]}
@@ -39,13 +39,13 @@ export default function Prensa() {
                   </div>
                   <div className="px-4 pb-4 flex flex-col flex-grow">
                     <span className="text-[10px] font-bold text-brand-teal uppercase tracking-widest mb-3">{post.date}</span>
-                    <h2 className="text-xl font-extrabold text-brand-dark group-hover:text-brand-teal transition-colors tracking-tight uppercase leading-tight mb-4">
+                    <h2 className="text-lg font-black text-brand-blue group-hover:text-brand-teal transition-colors tracking-tight uppercase leading-tight mb-4 min-h-[3.5rem] line-clamp-3">
                       {post.title}
                     </h2>
-                    <p className="text-brand-dark/60 font-medium text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
+                    <p className="text-brand-dark/50 font-bold text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
                       {post.excerpt}
                     </p>
-                    <Link href={`/prensa/${i}`} className="text-brand-blue font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all mt-auto border-b-2 border-transparent group-hover:border-brand-teal w-fit pb-1">
+                    <Link href={`/prensa/${i}`} className="text-brand-blue font-black text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all mt-auto border-b-2 border-transparent group-hover:border-brand-teal w-fit pb-1">
                       Leer Nota <span>→</span>
                     </Link>
                   </div>

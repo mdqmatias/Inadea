@@ -21,7 +21,8 @@ export default function Nosotros() {
 
       <section className="section-padding overflow-hidden">
         <div className="w-full flex flex-col gap-24 lg:gap-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-24 items-center">
+          {/* Top Section: Photo & Text Balanced */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="relative group mx-auto lg:mx-0 reveal active">
               <div className="relative aspect-[4/5] lg:aspect-[3/4] rounded-[4rem] overflow-hidden border-[12px] border-white shadow-2xl max-w-sm lg:max-w-none impact-shadow">
                 <Image 
@@ -47,17 +48,18 @@ export default function Nosotros() {
                   <p>Auditamos, capacitemos y certificamos bajo los procesos científicos más exigentes del mundo.</p>
                 </div>
               </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 w-full pt-10">
-                 {stats.map((stat, i) => (
-                   <div key={i} className="flex flex-col p-8 bg-brand-gray/50 rounded-[2.5rem] border border-zinc-100 group hover:bg-brand-blue transition-all duration-700 hover:-translate-y-2">
-                      <span className="text-3xl md:text-4xl font-black text-brand-blue group-hover:text-brand-teal transition-colors leading-none mb-2">{stat.value}</span>
-                      <span className="text-[11px] font-black uppercase tracking-[0.25em] text-brand-teal group-hover:text-white transition-colors mb-4">{stat.label}</span>
-                      <p className="text-sm font-bold text-brand-dark/40 leading-relaxed group-hover:text-white/60 transition-colors">{stat.description}</p>
-                   </div>
-                 ))}
-              </div>
             </div>
+          </div>
+
+          {/* Stats Grid - Moved Below to balance text/image above */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full reveal">
+             {stats.map((stat, i) => (
+               <div key={i} className="flex flex-col p-8 lg:p-10 bg-brand-gray/50 rounded-[3rem] border border-zinc-100 group hover:bg-brand-blue transition-all duration-700 hover:-translate-y-2 shadow-sm">
+                  <span className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-blue group-hover:text-brand-teal transition-colors leading-none mb-3">{stat.value}</span>
+                  <span className="text-[11px] font-black uppercase tracking-[0.25em] text-brand-teal group-hover:text-white transition-colors mb-5">{stat.label}</span>
+                  <p className="text-sm font-bold text-brand-dark/40 leading-relaxed group-hover:text-white/60 transition-colors">{stat.description}</p>
+               </div>
+             ))}
           </div>
         </div>
       </section>
@@ -71,7 +73,7 @@ export default function Nosotros() {
               { title: "Compromiso Humano", desc: "Formamos personas para salvar vidas reales en situaciones críticas.", icon: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" },
               { title: "Respuesta Inmediata", desc: "Reducimos tiempos de intervención con protocolos ágiles.", icon: "M12 6v6l4 2" }
             ].map((valor, i) => (
-              <div key={i} className="flex flex-col items-center md:items-start gap-8 text-center md:text-left reveal delay-300">
+              <div key={i} className="flex flex-col items-center md:items-start gap-8 text-center md:text-left reveal">
                  <div className="w-16 h-16 rounded-2xl bg-brand-teal/20 flex items-center justify-center text-brand-teal group-hover:scale-110 transition-transform shadow-xl">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d={valor.icon}/></svg>
                  </div>

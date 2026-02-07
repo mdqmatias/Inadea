@@ -49,16 +49,25 @@ export default function Cardioproteccion() {
              </div>
           </div>
 
-          {/* Pasos */}
+          {/* Pasos - Reorganización a 3 columnas arriba y 2 centradas abajo */}
           <div className="flex flex-col gap-16 lg:gap-24">
             <div className="text-center reveal">
                <span className="text-brand-teal font-black uppercase tracking-[0.6em] text-[10px] mb-4 block">Nuestra Metodología</span>
                <h2 className="text-brand-blue text-4xl md:text-6xl uppercase font-black tracking-tighter">El Camino a la Certificación</h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-8 lg:gap-10">
               {cardioproteccion.steps.map((step, i) => (
-                <div key={step.id} className={`group bg-brand-gray/30 p-10 lg:p-12 rounded-[3.5rem] border border-transparent hover:border-brand-teal/20 hover:bg-white transition-all duration-700 flex flex-col items-center text-center gap-8 shadow-sm hover:shadow-2xl reveal delay-${i * 100} hover:-translate-y-2`}>
+                <div 
+                  key={step.id} 
+                  className={`
+                    group bg-brand-gray/30 p-10 lg:p-12 rounded-[3.5rem] border border-transparent 
+                    hover:border-brand-teal/20 hover:bg-white transition-all duration-700 
+                    flex flex-col items-center text-center gap-8 shadow-sm hover:shadow-2xl reveal
+                    ${i < 3 ? 'md:col-span-2' : i === 3 ? 'md:col-span-2 md:col-start-2' : 'md:col-span-2'}
+                    hover:-translate-y-2
+                  `}
+                >
                   <div className="w-16 h-16 rounded-2xl bg-brand-blue flex items-center justify-center text-white text-3xl font-black shadow-xl group-hover:bg-brand-teal transition-all duration-500 impact-shadow">
                     {step.id}
                   </div>
