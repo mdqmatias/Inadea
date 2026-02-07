@@ -20,7 +20,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-brand-teal/5 blur-[120px] rounded-full -z-10 animate-pulse-soft opacity-60" />
         
         <div className="container-max px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div className="lg:col-span-7 flex flex-col gap-8 lg:gap-10 text-center lg:text-left z-20 reveal active">
+          <div className="lg:col-span-6 flex flex-col gap-8 lg:gap-10 text-center lg:text-left z-20 reveal active">
             {/* Etiqueta - Ahora a salvo del solapamiento del header */}
             <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-brand-blue shadow-xl text-white text-[10px] md:text-[11px] font-black uppercase tracking-[0.2em] leading-none self-center lg:self-start">
               <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
@@ -32,7 +32,7 @@ export default function Home() {
               <span className="text-brand-teal italic">menor al 5%?</span>
             </h1>
             
-            <p className="max-w-xl mx-auto lg:mx-0 leading-relaxed font-bold text-brand-dark/60 text-lg md:text-xl">
+            <p className="max-w-xl mx-auto lg:mx-0 leading-relaxed font-bold text-brand-dark/60 text-lg md:text-xl text-pretty">
               Cada minuto cuenta. Con un desfibrilador y personal capacitado, la sobrevida puede aumentar <span className="text-brand-teal font-extrabold text-2xl">hasta un 70%.</span>
             </p>
             
@@ -52,34 +52,34 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="lg:col-span-5 relative z-10 hidden lg:block reveal active delay-200">
-            {/* Contenedor de Imagen - Escalado para altura de Laptop */}
-            <div className="relative aspect-[4/5] max-h-[50svh] rounded-extreme border-[10px] border-white shadow-2xl overflow-hidden mx-auto">
+          <div className="lg:col-span-6 relative z-10 hidden lg:block reveal active delay-200">
+            {/* Contenedor de Imagen - Escalado para visibilidad en Laptop */}
+            <div className="relative aspect-[4/5] max-h-[65svh] rounded-extreme border-[10px] border-white shadow-2xl overflow-hidden mx-auto lg:ml-auto lg:mr-0 group">
                <Image 
                   src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1000" 
                   alt="Equipo Médico DEA" 
                   fill 
-                  className="object-cover"
+                  className="object-cover group-hover:scale-110 transition-transform duration-1000"
                   priority
                />
             </div>
 
-            {/* Badges - Premium pero más pequeños para seguridad de altura */}
-            <div className="absolute -top-6 -right-6 glass-morphism p-5 rounded-premium shadow-2xl animate-float flex items-center gap-4 z-30 border-white">
-               <div className="w-14 h-14 rounded-2xl bg-brand-teal flex items-center justify-center text-white shadow-lg">
-                 <span className="font-black text-2xl">70%</span>
+            {/* Badges - Más minimalistas para no saturar en laptop */}
+            <div className="absolute -top-4 -right-4 glass-morphism p-3 lg:p-4 rounded-[2rem] shadow-2xl animate-float flex items-center gap-3 z-30 border-white">
+               <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl bg-brand-teal flex items-center justify-center text-white shadow-lg">
+                 <span className="font-black text-lg lg:text-xl tracking-tighter">70%</span>
                </div>
                <div className="flex flex-col pr-2">
-                 <span className="text-[9px] font-black uppercase text-brand-blue opacity-40 leading-none mb-1">Sobrevida</span>
-                 <span className="text-sm font-black text-brand-blue leading-none">RCP + DEA</span>
+                 <span className="text-[7px] lg:text-[8px] font-black uppercase text-brand-blue opacity-40 leading-none mb-1">Sobrevida</span>
+                 <span className="text-[10px] lg:text-[12px] font-black text-brand-blue leading-none tracking-tight">RCP + DEA</span>
                </div>
             </div>
 
-            <div className="absolute -bottom-6 -left-6 glass-morphism p-5 rounded-premium shadow-2xl animate-float delay-1000 flex items-center gap-4 z-30 border-white">
-               <div className="w-11 h-11 rounded-2xl bg-brand-red flex items-center justify-center text-white shadow-inner">
-                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <div className="absolute -bottom-4 -left-4 glass-morphism p-3 lg:p-4 rounded-[2rem] shadow-2xl animate-float delay-1000 flex items-center gap-3 z-30 border-white">
+               <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-xl bg-brand-red flex items-center justify-center text-white shadow-inner">
+                 <svg width="14" height="14" className="lg:w-4 lg:h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                </div>
-               <span className="text-[10px] font-black text-brand-blue uppercase tracking-widest pr-2">Institución de Vida</span>
+               <span className="text-[8px] lg:text-[10px] font-black text-brand-blue uppercase tracking-widest pr-2">Institución de Vida</span>
             </div>
           </div>
         </div>

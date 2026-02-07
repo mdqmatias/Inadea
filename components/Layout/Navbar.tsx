@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -26,12 +27,14 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center px-4 py-4 md:py-5 pointer-events-none">
       <div className={`glass-morphism pointer-events-auto transition-all duration-700 rounded-full flex items-center justify-between w-full max-w-[1440px] shadow-2xl border border-white/40 ${scrolled ? 'h-[65px] px-8 scale-[0.985] -translate-y-2' : 'h-[80px] px-10'}`}>
         <Link href="/" className="flex items-center gap-3 md:gap-4 group">
-          <div className={`bg-brand-blue rounded-xl flex items-center justify-center shadow-lg transition-all duration-500 ${scrolled ? 'w-10 h-10' : 'w-11 h-11'}`}>
-            <span className={`text-white font-black transition-all ${scrolled ? 'text-lg' : 'text-xl'}`}>I</span>
-          </div>
-          <div className="flex flex-col">
-            <span className={`font-black tracking-tighter text-brand-blue leading-none transition-all ${scrolled ? 'text-lg' : 'text-xl'}`}>INADEA</span>
-            <span className="text-[8px] md:text-[9px] font-black uppercase tracking-[0.2em] text-brand-teal leading-none mt-1 opacity-80">Institución Médica</span>
+          <div className={`relative transition-all duration-500 overflow-hidden ${scrolled ? 'w-32 h-8' : 'w-40 h-10'}`}>
+            <Image 
+              src="/img/logoIcon.svg" 
+              alt="INADEA Logo" 
+              fill 
+              className="object-contain"
+              priority
+            />
           </div>
         </Link>
         
