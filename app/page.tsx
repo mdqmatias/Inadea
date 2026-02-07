@@ -152,8 +152,8 @@ export default function Home() {
       {/* Últimas Novedades - Prensa en Home (SYCNED CARD STYLE) */}
       <section className="section-padding bg-white reveal">
         <div className="container-max flex flex-col gap-16">
-          <div className="flex flex-col md:flex-row items-end justify-between gap-8">
-            <div className="flex flex-col gap-4">
+          <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-8 text-center md:text-left">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <span className="text-brand-teal font-black uppercase tracking-[0.4em] text-[10px]">Cultura de Salud</span>
               <h2 className="text-brand-blue text-4xl md:text-6xl uppercase font-black tracking-tighter">Últimas Novedades</h2>
             </div>

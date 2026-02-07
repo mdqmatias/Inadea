@@ -13,6 +13,10 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Inadea | Institución Médica Lider en Cardioprotección",
   description: "Especialistas en la creación de áreas cardioasistidas, capacitación en RCP y provisión de desfibriladores (DEA).",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({

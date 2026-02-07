@@ -18,7 +18,7 @@ export default function Nosotros() {
       <section className="relative pt-32 pb-20 overflow-hidden bg-brand-blue">
         <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-teal/10 blur-[100px] rounded-full" />
         <div className="container-max px-6 relative z-10 text-center lg:text-left">
-          <div className="flex flex-col gap-6 max-w-4xl">
+          <div className="flex flex-col gap-6 max-w-4xl mx-auto lg:mx-0">
             <span className="text-brand-teal font-black uppercase tracking-[0.4em] text-xs">Sobre Nosotros</span>
             <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] uppercase">
               Pasión por la <span className="text-brand-teal">excelencia médica</span>
@@ -47,10 +47,10 @@ export default function Nosotros() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-12 reveal delay-200">
+            <div className="flex flex-col gap-12 reveal delay-200 text-center lg:text-left items-center lg:items-start">
                <div className="flex flex-col gap-6">
                  <h2 className="text-brand-blue text-4xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.9]">Misión & <span className="text-brand-teal">Visión</span></h2>
-                 <p className="text-brand-dark/70 text-lg font-bold leading-relaxed">
+                 <p className="text-brand-dark/70 text-lg font-bold leading-relaxed max-w-xl">
                    En Inadea, nuestra misión es erradicar las muertes súbitas evitables mediante la implementación estratégica de tecnología y conocimiento médico. Visualizamos un país donde cada ciudadano sepa cómo actuar y cada institución esté equipada para salvar una vida.
                  </p>
                </div>

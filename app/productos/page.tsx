@@ -33,7 +33,7 @@ export default function Productos() {
                  <div className="absolute inset-0 bg-brand-blue/10 group-hover:bg-transparent transition-colors duration-700" />
               </div>
 
-              <div className="lg:w-1/2 p-10 lg:p-20 flex flex-col justify-center gap-6 lg:gap-10">
+              <div className="lg:w-1/2 p-10 lg:p-20 flex flex-col justify-center gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left">
                  <div className="flex flex-col gap-4">
                    <span className="text-brand-teal font-black uppercase tracking-[0.4em] text-xs leading-none">{producto.brand}</span>
                    <h2 className="text-brand-blue leading-[0.95] text-4xl md:text-6xl uppercase font-black tracking-tighter">
