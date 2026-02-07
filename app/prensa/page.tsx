@@ -21,7 +21,7 @@ export default function Prensa() {
       />
 
       <section className="section-padding bg-brand-gray/20">
-        <div className="container-max">
+        <div className="container-max px-6 md:px-10">
           {/* Main Grid - Synced with Home Style for Consistency */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
              {prensa.map((post, i) => (
@@ -39,9 +39,10 @@ export default function Prensa() {
                   </div>
                   <div className="px-4 pb-4 flex flex-col flex-grow">
                     <span className="text-[10px] font-bold text-brand-teal uppercase tracking-widest mb-3">{post.date}</span>
-                    <h2 className="text-base md:text-lg font-bold text-brand-blue group-hover:text-brand-teal transition-colors tracking-tight uppercase leading-tight mb-4 min-h-[3.5rem] line-clamp-3">
+                    {/* H3 with exact Home matching classes - font-bold and text-base/lg */}
+                    <h3 className="text-base md:text-lg font-bold text-brand-blue group-hover:text-brand-teal transition-all tracking-tight uppercase leading-tight mb-4 min-h-[3.5rem] line-clamp-3">
                       {post.title}
-                    </h2>
+                    </h3>
                     <p className="text-brand-dark/50 font-bold text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
                       {post.excerpt}
                     </p>
