@@ -4,9 +4,10 @@ import content from "@/data/content.json";
 import InternalHero from "@/components/Sections/InternalHero";
 import { notFound } from "next/navigation";
 
-export default function PostPage({ params }: { params: { id: string } }) {
+export default async function PostPage({ params }: { params: Promise<{ id: string }> }) {
   const { prensa } = content;
-  const postIndex = parseInt(params.id);
+  const { id } = await params;
+  const postIndex = parseInt(id);
   const post = prensa[postIndex];
 
   if (!post) {

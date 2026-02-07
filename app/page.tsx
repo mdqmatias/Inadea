@@ -176,7 +176,7 @@ export default function Home() {
                  </div>
                  <div className="px-4 pb-4 flex flex-col flex-grow">
                    <span className="text-[10px] font-bold text-brand-teal uppercase tracking-widest mb-3">{post.date}</span>
-                   <h3 className="text-lg font-black text-brand-blue group-hover:text-brand-teal transition-colors tracking-tight uppercase leading-tight mb-4 min-h-[3.5rem] line-clamp-3">
+                   <h3 className="text-base md:text-lg font-bold text-brand-blue group-hover:text-brand-teal transition-colors tracking-tight uppercase leading-tight mb-4 min-h-[3.5rem] line-clamp-3">
                      {post.title}
                    </h3>
                    <p className="text-brand-dark/50 font-bold text-sm leading-relaxed mb-8 flex-grow line-clamp-3">
